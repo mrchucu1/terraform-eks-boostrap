@@ -18,7 +18,7 @@ output "cluster_name" {
   value       = module.eks.cluster_name
 }
 
-utput "ecr_repository_url" {
+output "ecr_repository_url" {
   value = module.ecr.repository_url
   description = "ECR repository URL where Docker images are stored"
 }

@@ -30,11 +30,6 @@ variable "instance_type" {
   default     = "t3.medium"
 }
 
-variable "cluster_name" {
-  description = "EKS cluster name"
-  default     = "kubernetes-cluster"
-}
-
 variable "s3_state" {
   description = "S3 bucket for your terraform state"
   default     = "terraform-state-63c9063cdb15"
