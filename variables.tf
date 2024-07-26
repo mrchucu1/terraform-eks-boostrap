@@ -1,6 +1,6 @@
 variable "region" {
   description = "AWS region"
-  default     = "us-west-2"
+  default     = "us-east-2"
 }
 
 variable "cluster_name" {
@@ -28,9 +28,4 @@ variable "public_subnet_cidrs" {
 variable "instance_type" {
   description = "EC2 instance type for EKS worker nodes"
   default     = "t3.medium"
-}
-
-variable "s3_state" {
-  description = "S3 bucket for your terraform state"
-  default     = "terraform-state-63c9063cdb15"
 }

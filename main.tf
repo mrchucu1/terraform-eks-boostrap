@@ -99,9 +99,7 @@ module "irsa-ebs-csi" {
   oidc_fully_qualified_subjects = ["system:serviceaccount:kube-system:ebs-csi-controller-sa"]
 }
 
-module "ecr_example_complete" {
+module "ecr_default" {
   source  = "terraform-aws-modules/ecr/aws//examples/complete"
   version = "2.2.1"
-  
-  project_name = var.project_name
 }
