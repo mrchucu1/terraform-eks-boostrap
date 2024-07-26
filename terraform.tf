@@ -31,8 +31,8 @@ terraform {
   required_version = "~> 1.3"
 
   backend "s3" {
-    bucket = var.s3_state
+    bucket = "terraform-state-63c9063cdb15"
     key    = "state"
-    region = var.region
+    region = "us-west-2"
   }
 }
